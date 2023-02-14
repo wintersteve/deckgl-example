@@ -1,0 +1,39 @@
+.container {
+  align-items: center;
+  border-radius: 2px;
+  display: flex;
+  cursor: pointer;
+  gap: var(--space-sm);
+  margin: 0 calc(var(--space-xs) - var(--space-xs) * 2);
+  padding: var(--space-xs);
+  user-select: none;
+  transition: background-color 200ms ease;
+}
+
+.container:hover {
+  background-color: var(--color-dark-muted);
+}
+
+.outer {
+  border: 2px solid var(--color-light-main);
+  border-radius: 2px;
+  display: flex;
+  max-height: var(--space-md);
+  max-width: var(--space-md);
+}
+
+.outer--checked {
+  background-color: var(--color-primary-main);
+  border-color: transparent;
+}
+
+.icon {
+  fill: transparent;
+  width: inherit;
+  height: inherit;
+  transition: fill 100ms ease;
+}
+
+.icon--checked {
+  fill: var(--color-light-main);
+}

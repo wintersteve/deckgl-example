@@ -1,0 +1,15 @@
+.container {
+  background: transparent;
+  border: none;
+  color: var(--color-light-main);
+  cursor: pointer;
+  font-weight: 700;
+  opacity: 0.7;
+  padding: 0.75rem;
+  transition: opacity 150ms ease;
+}
+
+.container--active {
+  border-bottom: 1px solid;
+  opacity: 1;
+}

@@ -1,0 +1,36 @@
+.container {
+  align-items: center;
+  display: flex;
+  gap: var(--space-sm);
+  user-select: none;
+}
+
+.outer {
+  align-items: center;
+  background-color: #d3d3d3;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  max-height: var(--space-sm);
+  min-width: 3rem;
+  transition: color 300ms ease;
+}
+
+.outer--checked {
+  background-color: var(--color-primary-muted);
+}
+
+.inner {
+  background-color: #fff;
+  border-radius: 1rem;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+  position: relative;
+  transition: color, transform 150ms ease;
+}
+
+.inner--checked {
+  background-color: var(--color-primary-main);
+  transform: translateX(1.5rem);
+}

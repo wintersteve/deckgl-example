@@ -1,13 +1,34 @@
+:root {
+  --color-light-main: rgb(255, 255, 255);
+  --color-dark-muted: rgb(27 30 33);
+  --color-primary-main: rgb(144, 202, 249);
+  --color-primary-muted: rgb(96 139 174);
+  --font-xs: 0.85rem;
+  --font-sm: 1;
+  --space: 1rem;
+  --space-xs: calc(var(--space) * 0.5);
+  --space-sm: calc(var(--space) * 1);
+  --space-md: calc(var(--space) * 1.5);
+  --space-lg: calc(var(--space) * 2);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
